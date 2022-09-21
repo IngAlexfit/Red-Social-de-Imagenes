@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Red - Panel Super Administrador</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+    </ul>
+
+   
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="https://northcentralus1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Funinorte-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!ukDMWKDanEmEVvVRGBwsTYyJCe1R_29EkaTlCVeGfOGzSRWG7fcnRJ-wjrth8UK0%2Fitems%2F01AW6FS5LRY6UY54H7NNFJH4LNDKBWQGO6%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdW5pbm9ydGUtbXkuc2hhcmVwb2ludC5jb21AYmFiMGI2NzktYmQ1Zi00ZmU4LWI1MTYtYzZiOGIzMTdjNzgyIiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTY2MzY4NjAwMCIsImV4cCI6IjE2NjM3MDc2MDAiLCJlbmRwb2ludHVybCI6ImZGcitrMkxBcXFOSEdEMlBsbThRbFBBdTVmMmRQRTlvZ1VKTnNWTkFjSXc9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTgiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJOVGhqWXpRd1ltRXRaR0ZoTUMwME9UbGpMVGcwTlRZdFpqVTFNVEU0TVdNeVl6UmsiLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8dXJuJTNhc3BvJTNhYW5vbiMwMDhiMzRhNjMyYTVmN2IxZDg3ZTE3OTQ1ZTljNzRkOTEzYTJjYTVlYzFmNjdhYTllZTJiNDg5ZDlmMTliODRkIiwibmlpIjoibWljcm9zb2Z0LnNoYXJlcG9pbnQiLCJpc3VzZXIiOiJ0cnVlIiwiY2FjaGVrZXkiOiIwaC5mfG1lbWJlcnNoaXB8dXJuJTNhc3BvJTNhYW5vbiMwMDhiMzRhNjMyYTVmN2IxZDg3ZTE3OTQ1ZTljNzRkOTEzYTJjYTVlYzFmNjdhYTllZTJiNDg5ZDlmMTliODRkIiwic2hhcmluZ2lkIjoiaW9KTmtvTi9TMFd1WDU2eCt2UElWQSIsInR0IjoiMCIsInVzZVBlcnNpc3RlbnRDb29raWUiOiIyIiwiaXBhZGRyIjoiMTc3LjI1NC4wLjU3In0.YVBPNTV1VS9qSHRNV2tZK1RUdEN0Qit2S1hMYzVUQmhYeW4rQVV2OEZIdz0&cTag=%22c%3A%7B8EA9C771-FFF0-4A6B-93F1-6D1A836819DE%7D%2C2%22&encodeFailures=1&width=1366&height=613&srcWidth=&srcHeight=" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <br>
+      <span class="brand-text font-weight-light"></span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://adminlte.io/themes/v3/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Juan Sin Miedo</a>
+        </div>
+      </div>
+
+      
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+      
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                SuperAdminstrador
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Control de la plataforma</p>
+                </a>
+              </li>
+             <li onclick="perfil()"  class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mis Datos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cerrar Sesion</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav nav-treeview">
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+       
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-12 connectedSortable">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title" id="titulo" name="titulo">
+                  aqui va el titulo
+                </h3>
+                
+              </div><!-- /.card-header -->
+              <div class="card-body" id="contenido" name="contenido">
+                
+                aqui publicaremos informacion
+
+              </div><!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+            <!-- /.card -->
+          </section>
+       
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong><a>MisionTIC 2022</a>.</strong>
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="https://adminlte.io/themes/v3/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="https://adminlte.io/themes/v3/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="https://adminlte.io/themes/v3/plugins/moment/moment.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="https://adminlte.io/themes/v3/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://adminlte.io/themes/v3/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://adminlte.io/themes/v3/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="https://adminlte.io/themes/v3/dist/js/pages/dashboard.js"></script>
+
+<script>
+
+  function gesUsuario(){
+    $("#titulo").html("Gestion de Usuarios");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Nombres</th>"
+                +"<th>Apellidos</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Roger</td>"
+                +"<td>Hernandez</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>2</td>"
+                +"<td>Anna</td>"
+                +"<td>Carmel</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+  }
+
+////////////////////////////////
+function comentarios(){
+
+  $("#titulo").html("Gestion de Comentarios");
+
+    var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Comentarios</th>"
+                +"<th>Usuario</th>"
+                +"<th>Fecha</th>"
+                +"<th>Hora</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Esta excelente la foto</td>"
+                +"<td>Anna</td>"
+                +"<td>17/09/2022</td>"
+                +"<td>11:47:20</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                +"</td>"
+              +"</tr>"
+             
+              +"</tr>"
+
+            +"</table>";
+
+    $("#contenido").html(info);
+
+}
+
+/////////////////
+function perfil(){
+  $("#titulo").html("Mis Datos");
+
+  var info="Juan Sin Miedo "
+          +"<br> IDentificacion: 456789"
+          +"<br> Telefono: 876543"
+          +"<br> Direccion: la Octava Maravilla Calle Correa";
+
+$("#contenido").html(info);
+
+
+}
+
+
+</script>
+
+
+</body>
+</html>
