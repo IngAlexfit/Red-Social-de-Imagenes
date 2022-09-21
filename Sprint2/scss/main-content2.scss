@@ -1,0 +1,26 @@
+@import "variables";
+
+.main-content2 {
+    background-color: $first-color-dark;
+    height: 88vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center top;
+        grid-row: 1/7;
+        grid-column: 1/7;
+    }
+
+    p{
+        color: white;
+        font-size: 25px;
+        grid-row: 5/5;
+        grid-column: 3/3;
+        font-weight: bold;
+    }
+}

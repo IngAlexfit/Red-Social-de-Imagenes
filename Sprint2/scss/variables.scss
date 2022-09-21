@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$first-color:#673ab7;
+$first-color-light:#d1c4e9;
+$first-color-dark:#311b92;
+$second-color:#00bcd4;
+$second-color-light:#b2ebf2;
+$second-color-dark:#006064;
+$third-color:#e91e63;
+

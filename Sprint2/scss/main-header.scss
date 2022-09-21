@@ -1,0 +1,49 @@
+@import "variables";
+@import "button";
+
+.main-header {
+    max-height: 85px;
+    min-height: 80px;
+    height: 12vh;
+    display: flex;
+
+    section:nth-child(1) {
+        width: 25%;
+        @include centrar();
+    }
+
+    section:nth-child(2) {
+        width: 50%;
+        @include centrar();
+        ul{
+            display:flex;
+            justify-content: space-evenly;
+            width: 80%;
+        }
+    }
+
+    section:nth-child(3) {
+        width: 25%;
+        @include centrar();
+        column-gap: 3%;
+        button:nth-child(1){
+            @include button(white, black);
+            
+        }
+        
+        button:nth-child(1):hover{
+            background-color: $first-color;
+            color: white;
+        }
+
+        button:nth-child(2){
+            @include button($first-color, white);
+        }
+        
+        button:nth-child(2):hover{
+            background-color: $first-color-dark;
+            color: white;
+        }
+    }
+
+}
