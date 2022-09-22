@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Social Red - Panel Super Administrador</title>
+  <title>Social Red - Panel Administrador</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -85,10 +85,11 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
+              <li onclick="Gestion()"  class="nav-item">
                 <a  class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Control de la plataforma</p>
+                  
                 </a>
               </li>
              <li onclick="perfil()"  class="nav-item">
@@ -159,7 +160,7 @@
   <footer class="main-footer">
     <strong><a>MisionTIC 2022</a>.</strong>
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 1.0.0
+      <b>Version</b> 3.2.0
     </div>
   </footer>
 
@@ -243,40 +244,6 @@
 
   }
 
-////////////////////////////////
-function comentarios(){
-
-  $("#titulo").html("Gestion de Comentarios");
-
-    var info="<table class='table table-striped table-bordered'>"
-              +"<tr>"
-                +"<th>No</th>"
-                +"<th>Comentarios</th>"
-                +"<th>Usuario</th>"
-                +"<th>Fecha</th>"
-                +"<th>Hora</th>"
-                +"<th>Opciones</th>"
-              +"</tr>"
-              +"<tr>"
-                +"<td>1</td>"
-                +"<td>Esta excelente la foto</td>"
-                +"<td>Anna</td>"
-                +"<td>17/09/2022</td>"
-                +"<td>11:47:20</td>"
-                +"<td>"
-                  +"<button class='btn btn-danger'>Eliminar</button>"
-                +"</td>"
-              +"</tr>"
-             
-              +"</tr>"
-
-            +"</table>";
-
-    $("#contenido").html(info);
-
-}
-
-/////////////////
 function perfil(){
   $("#titulo").html("Mis Datos");
 
@@ -288,6 +255,74 @@ function perfil(){
 $("#contenido").html(info);
 
 
+}
+function Gestion(){
+  $("#titulo").html("Gestion Usuarios");
+  var info="<table class='table table-striped table-bordered'>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Nombres</th>"
+                +"<th>Apellidos</th>"
+                +"<th>Tipo de Usuario</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Antonio</td>"
+                +"<td>Alzate</td>"
+                +"<td>Usuario final</>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>2</td>"
+                +"<td>Mustela</td>"
+                +"<td>Lutreola</td>"
+                +"<td>Administrador</>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+              +"</table>"
+
+            +"<br>"+"<p>Gestion de Publicacion</p>"+
+              "<table class='table '>"
+              +"<tr>"
+                +"<th>No</th>"
+                +"<th>Titulo</th>"
+                +"<th>Descripcion</th>"
+                +"<th>Nombre Usuario</th>"
+                +"<th>Fecha</th>"
+                +"<th>Opciones</th>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>1</td>"
+                +"<td>Paseo </td>"
+                +"<td>Mi primer paseo</td>"
+                +"<td>Antonio Alzate</td>"
+                +"<td>26 Noviembre 2020</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+              +"<tr>"
+                +"<td>2</td>"
+                +"<td>Bautizo</td>"
+                +"<td>Bautizo de mi hijo</td>"
+                +"<td>Antonio Alzate</td>"
+                +"<td> 15 Diciembre 2020</td>"
+                +"<td>"
+                  +"<button class='btn btn-danger'>Eliminar</button>"
+                  +"<button class='btn btn-info'>Editar</button>"
+                +"</td>"
+              +"</tr>"
+
+            +"</table>";
+  $("#contenido").html(info);
 }
 
 
